@@ -195,10 +195,9 @@
             <span class="price-suffix">one-time payment</span>
         </div>
         
-        <!-- STRIPE INTEGRATION PLACEHOLDER -->
-        <!-- TODO: Replace href="#" with Stripe Checkout link or integrate Stripe Payment Element -->
-        <!-- Example: href="https://checkout.stripe.com/c/pay/cs_test_..." -->
-        <a href="#" class="buy-button" id="buyButton">
+        <!-- STRIPE CHECKOUT INTEGRATION -->
+        <!-- This button redirects to the Stripe Payment Link for course purchase -->
+        <a href="https://buy.stripe.com/9B66oHa6bd6S8avd45afS00" class="buy-button" id="buyButton">
             Buy Now
         </a>
         
@@ -217,20 +216,8 @@
     </div>
     
     <script>
-        // Placeholder for Stripe integration
-        document.getElementById('buyButton').addEventListener('click', function(e) {
-            e.preventDefault();
-            
-            // TODO: Integrate with Stripe Checkout
-            // Option 1: Redirect to Stripe Checkout
-            // window.location.href = 'YOUR_STRIPE_CHECKOUT_URL';
-            
-            // Option 2: Use Stripe.js for embedded checkout
-            // const stripe = Stripe('YOUR_PUBLISHABLE_KEY');
-            // stripe.redirectToCheckout({ sessionId: 'SESSION_ID' });
-            
-            alert('Stripe integration coming soon! This button will connect to Stripe Checkout.');
-        });
+        // Stripe integration complete - button redirects to Stripe Payment Link
+        // No additional JavaScript needed for basic checkout flow
     </script>
 </body>
 </html>
